@@ -1,0 +1,255 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,12pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-1.0mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\bullet$}
+% \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0.8mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Aviral Jain} % Your Name
+\newcommand{\phone}{7737021875} % Your Phone Number
+\newcommand{\emaila}{aviral.application@gmail.com} %Email 1
+
+
+
+
+\begin{document}
+%\fontfamily{phv}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{\dimexpr\linewidth-0.5cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name}\\
+  {Software Engineer} & \raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila} \\
+  \href{https://www.linkedin.com/in/aviral-jain-10/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ LinkedIn - aviral-jain-10} &  {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone} \\
+  \href{https://github.com/aviralJain101}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub - aviralJain101}}& {\raisebox{0.0\height}{\footnotesize}\ Kota, Rajasthan, India}\\
+\end{tabularx}
+}
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology BHU, Varanasi (IIT BHU)}{CGPA: 8.88}
+      {Bachelor of Technology - Electronics Engineering}{2018 - 2022}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Development Toolkit}{: Java, Nodejs, C++, C, Python, Dropwizard, MongoDB, MySQL, Git.} \\
+         \vspace{2pt}
+     \textbf{Areas of Interest}{: Data Structure and Algorithm, Backend Development, Object Oriented Programming (OOPS).}
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oracle (Oracle Cloud Infrastructure)}{India}
+      {Software Developer 2 (Member Of Technical Staff)}{06/2022 - Present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Collaborated with a global team of 30+ members to develop the Operating system management service (OSMS).}
+    \item {Wrote the Migration assistant CLI script in Python, enabling 1,000+ companies to migrate from OSMS v1 to v2 in a single build.}
+    \item {Reduced up to 20\% on-call bugs by developing the Rest Apis in Modules service, hence making the Spacewalk Microservice aware of the upgradeable module streams.}
+    \item {Completed over 50 days of On-call shifts, included business Kpis in the managed instance service, designed interface based mocks for external Api calls, and boosted Integration Tests coverage from 10\% to 95\% of APIs.}
+    \item {Exposure: Java, Dropwizard, Python, Oracle Cloud, TestNG, Git, Agile methodology, On-call.}
+    \resumeItemListEnd
+    
+    \vspace{-0.5mm}
+    
+    \resumeSubheading
+      {TATA AIG Innovation Labs}{India}
+      {Software Engineering Intern}{05/2021 - 07/2021}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Within a strict deadline of 2 months, developed the initial version of the Usage-Based Motor Insurance Backend service that accepts and stores images in an AWS S3 cloud bucket, includes mathematical calculations for notification checks, triggers an email via AWS SES, and performs CRUD requests for policy data.}
+    \item {Drafted a scalable Low-Level Design and Increased the unit tests coverage to 98\%}
+    \item {Exposure - Node.js, TypeScript, Javascript, Rest Api, Express, Jest, Low-Level Designing, AWS Ses, S3, and DynamoDB.}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+    
+    \resumeProject
+      {Friends App - Backend} %Project Name
+      {An application for finding friends near your area in both a fun and private way.} %Project Name, Location Name
+      {02/2023 - Present} %Event Dates
+
+      \resumeItemListStart
+      \item {Created a scalable Node.js backend with an interest and distance based Matching Algorithm.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+      {School Admission Portal} %Project Name
+      {An Interface for a fluent, fast, and secured admission process for schools and students.} %Project Name, Location Name
+      {10/2020 - 12/2020} %Event Dates
+
+      \resumeItemListStart
+        \item {Designed the service, which including features such as authorization as a student/school, filtering and sorting schools based on their ratings, filling admission forms online, and real-time chatting.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Languages-----------------
+\section{\textbf{Achievements And Extracurricular}}
+\begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+\textbf{Achievements: }\small\\
+\textbf{-- }{Qualified for Round 2 of the Facebook Hacker cup after clearing the Qualification and Round 1.}\\
+ \textbf{-- }{Secured top 0.5\% rank out of 1,300,000 students in IIT JEE exam.} \\
+     \textbf{Extracurricular: }{Piano, Astronomy, Chess, Geopolitics.} \\
+    }}
+ \end{itemize}
+\vspace{-5mm}
+
+
+%-------------------------------------------
+\end{document}
